@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins',sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #131313;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-wrap: wrap;
+            width: 1200px;
+            transform-style: preserve-3d;
+        }
+        .container .box{
+            width: 300px;
+            position: relative;
+            height: 400px;
+            margin: 40px;
+            background: #232323;
+            border-radius: 20px;
+            transform-style:preserve-3d;
+        }
+        .container .box::before{
+            content:'NIKE';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 6em;
+            font-weight: 900;
+            color: white;
+            font-style: italic;
+            opacity: 0;
+            transition: .5s;
+        }
+        .container .box::after{
+            content:'SHOES';
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 5em;
+            font-weight: 900;
+            color: white;
+            font-style: italic;
+            opacity: 0;
+            transition: .5s;
+        }
+        .container .box:hover::before,
+        .container .box:hover::after{
+            opacity: 0.04;
+        }
+        .container .box .name{
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            color: white;
+            width: 100%;
+            transform: translate3d(0,0,75px);
+            transition: .5s;
+            opacity: 0;
+            transform-style: preserve-3d;
+            z-index: 10;
+        }
+        .container .box:hover .name{
+            top: 40px;
+            opacity: 1;
+        }
+        .container .box .buy{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform-style: preserve-3d;
+            transform:translate3d(-50%,0,75px);
+            color: white;
+            background: #333;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: .5s;
+            opacity: 0;
+            z-index: 10;
+        }
+        .container .box:hover .buy{
+            bottom: 30px;
+            opacity: 1;
+        }
+        .container .box .circle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            transition: .5s;
+            background: white;
+            transform-style: preserve-3d;
+            transform:translate3d(-50%,-50%,50px);
+            z-index: 10;
+            opacity: 1;
+        }
+        .container .box .product{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 300px;
+            transition: .5s;
+            z-index: 11;
+            transform-style: preserve-3d;
+            transform:translate3d(-50%,-50%,60px) rotate(-15deg);
+        }
+        .container .box:hover .product{
+            transform:translate3d(-50%,-50%,120px) rotate(-15deg);
+        }
+        .container .box:nth-child(1) .circle,
+        .container .box:nth-child(1) .buy{
+            background: #9bdc28;
+        }
+        .container .box:nth-child(2) .circle,
+        .container .box:nth-child(2) .buy{
+            background: #9bdc28;
+        }
+        .container .box:nth-child(3) .circle,
+        .container .box:nth-child(3) .buy{
+            background: #9bdc28;
+        }
+        /*it seems that the link in the video doesnt contain 3
+         shoe images so i have only this shoe image i can make it 
+         like this instead */
+         /*
+         .container .box .circle,
+         .container .box .buy {
+         background:#9bdc28;
+         }
+         */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+                <div class="submenu">
+                    <a href="">Management</a>
+                    <div class="dropdown-2">
+                        <a href="">Developers<i class="fa fa-angle-right"></i></a>
+                        <div class="submenu-2">
+                            <a href="">Frontend Developer</a>
+                            <a href="">Backend Developer</a>
+                        </div>
+                    </div>
+                    <a href="">Designers</a>
+                    <a href="">Support Team</a>
+                </div>
+            <a href="contact.html">Contact us</a>
+            
+            <div class="dropdown">
+                <a class="active" href="#">Task 5</a>
+                <div class="submenu">
+                    <a href="grid-list.html">Grid-view vs List-view</a>
+                    <a href="ourteam.html">Our Team</a>
+                    <a href="share.html">Share Button</a>
+                    <a href="neumorphism.html">Neumorphism Cards</a>
+                    <a class="active" href="#">Product Card</a>
+                    <a href="todo.html">To Do List</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box">
+                <h2 class="name">Product Name</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img class="product" src="assets/images/running_shoes.png" alt="Shoes">
+            </div>
+
+            <div class="box">
+                <h2 class="name">Product Name</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img class="product" src="assets/images/running_shoes.png" alt="Shoes">
+            </div>
+
+            <div class="box">
+                <h2 class="name">Product Name</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img class="product" src="assets/images/running_shoes.png" alt="Shoes">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>WebDev 💻</div>
+        <div>&copy;Ali Mohammad. All rights reserved.</div>
+    </footer>
+
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+</body>
+</html>

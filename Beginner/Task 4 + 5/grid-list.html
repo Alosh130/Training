@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="css/grid-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+                <div class="submenu">
+                    <a href="">Management</a>
+                    <div class="dropdown-2">
+                        <a href="">Developers<i class="fa fa-angle-right"></i></a>
+                        <div class="submenu-2">
+                            <a href="">Frontend Developer</a>
+                            <a href="">Backend Developer</a>
+                        </div>
+                    </div>
+                    <a href="">Designers</a>
+                    <a href="">Support Team</a>
+                </div>
+            <a href="contact.html">Contact us</a>
+            
+            <div class="dropdown">
+                <a class="active" href="#">Task 5</a>
+                <div class="submenu">
+                    <a class="active" href="#">Grid-view vs List-view</a>
+                    <a href="ourteam.html">Our Team</a>
+                    <a href="share.html">Share Button</a>
+                    <a href="neumorphism.html">Neumorphism Cards</a>
+                    <a href="product-card.html">Product Card</a>
+                    <a href="todo.html">To Do List</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="links">
+                <ul>
+                    <li class="list active" data-view="list-view"><i class="fa fa-th-list"></i>List View</li>
+                    <li class="grid" data-view="grid-view"><i class="fa fa-th-large"></i>Grid View</li>
+                </ul>
+            </div>
+
+            <div class="view-main">
+                <div class="view-wrap list-view" style="display: block;">
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/tomato.png" alt="a Tomato">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Tomato</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/chilli.png" alt="a chilli">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Chilli</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/carrot.png" alt="a carrot">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Carrot</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/banana.png" alt="a banana">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Banana</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/apple.png" alt="an apple">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Apple</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/onion.png" alt="an onion">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Onion</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/potato.png" alt="a potato">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Potato</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/pineapple.png" alt="a pineapple">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Pineapple</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/strawberry.png" alt="a strawberry">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Strawberry</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/grapes.png" alt="a grapes">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Grapes</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-wrap grid-view" style="display: none;">
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/tomato.png" alt="a Tomato">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Tomato</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/chilli.png" alt="a chilli">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Chilli</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/carrot.png" alt="a carrot">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Carrot</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/banana.png" alt="a banana">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Banana</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/apple.png" alt="an apple">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Apple</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/onion.png" alt="an onion">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Onion</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/potato.png" alt="a potato">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Potato</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/pineapple.png" alt="a pineapple">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Pineapple</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/strawberry.png" alt="a strawberry">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Strawberry</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                    <div class="view-item">
+                        <div class="vi-left">
+                            <img src="assets/images/grapes.png" alt="a grapes">
+                        </div>
+                        <div class="vi-right">
+                            <p class="title">Grapes</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus culpa esse repellat! Vero, itaque.</p>
+                            <div class="btn">View More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>WebDev 💻</div>
+        <div>&copy;Ali Mohammad. All rights reserved.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

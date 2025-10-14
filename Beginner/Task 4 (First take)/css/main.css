@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E7EB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background: linear-gradient(135deg, #007AFF, #4ECDC4);
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px 0;
+    color: white;
+}
+
+nav a {
+    color: white;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #F8FAFC;
+    transform: translateY(-2px);
+}
+
+nav a.active{
+    background-color: #FF6B6B;
+    color: white;
+    font-weight: 600;
+}
+
+nav a.active:hover{
+    background-color: #FF5252;
+    transform:translateY(-2px);
+}
+
+main{
+    flex: 1;
+}
+
+footer{
+    background-color: #164E63;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.list-view{
+    width: 80%;
+}
+
+.list-view .list-item{
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.list-view .list-item .item-info h3{
+    color: #007AFF;
+}
+
+.list-view .list-item .item-info p{
+    margin-top: .5rem;
+    color: #334155;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.list-view .list-item .item-info span{
+    display: inline-block;
+    color: #64748B;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
+.list-view .list-item .item-btn button{
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #007AFF;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition:background-color 0.3s ease-in-out;
+}
+
+.list-view .list-item .item-btn button:hover{
+    background-color: #005FCC;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.grid-view .grid-item{
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    transition:  .3s ease-in-out;
+}
+
+.grid-view .grid-item span{
+    font-size: 3rem;
+}
+
+.grid-view .grid-item h3{
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.grid-view .grid-item p{
+    margin-top: 1.5rem;
+    color: #666767;
+}
+
+.grid-view{
+    width: 80%;
+}
+
+.grid-view .grid-item .item-btn button{
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: #4eccc5;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.grid-view .grid-item .item-btn button:hover{
+    background-color: #3BB8B0;
+    cursor: pointer;
+}
+
+.grid-view .grid-item:hover{
+    cursor: pointer;
+    transform:translateY(-4px);
+}

@@ -1,0 +1,57 @@
+body 
+{
+    font-family:Verdana, sans-serif;
+    margin:0;
+    background-color:#f8f5f0;
+}
+/* First Animation */
+
+.first-animation{
+    text-align:center;
+}
+
+.m1
+{
+    position:relative;
+    font-weight:300;
+    font-size:4.5em;
+    color:#402d2d;
+}
+
+.m1 .text-wrapper
+{
+    position:relative;
+    display: inline-block;
+    padding-top:.1em;
+    padding-right:.05em;
+    padding-bottom:.15em;
+    line-height:1em;
+}
+
+.m1 .line
+{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    margin:auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin:0.5 0;
+}
+
+.m1 .ampersand
+{
+    font-family: Baskerville,serif;
+    font-style:italic;
+    font-weight: 400;
+    width: 1em;
+    margin:0 -0.1em;
+}
+
+.m1 .letters
+{
+    display: inline-block;
+    opacity:0;
+}

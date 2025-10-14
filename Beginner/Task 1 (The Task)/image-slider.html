@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/image-slider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Image slider</title>
+    
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <nav>
+                <a class="act" href="./image-slider.html">Image slider</a>
+                <a href="./animation-1.html">Animation 1</a>
+                <a href="./animation-2.html">Animation 2</a>
+                <a href="./animation-3.html">Animation 3</a>
+                <a href="./glowing-text.html">Glowing Text</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+        <div class="mySlides fade">
+            <div class="number">1 / 3</div>
+            <img src="./assets/images/img_nature_wide.jpg" alt="nature">
+            <div class="text">Caption one</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="number">2 / 3</div>
+            <img src="./assets/images/img_mountains_wide.jpg" alt="mountains">
+            <div class="text">Caption two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="number">3 / 3</div>
+            <img src="./assets/images/img_snow_wide.jpg" alt="snow">
+            <div class="text">Caption three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </main>
+
+    <footer>
+        <div class="inner">
+            <p>&copy; <span id="year"></span> All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/image-slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- Container Styles --- */
+        .flex-container {
+          display: flex; /* This makes it a flex container! */
+          border: 2px solid #333;
+          padding: 10px;
+        }
+
+        /* --- General Item Styles --- */
+        .flex-item {
+          color: white;
+          padding: 20px;
+          text-align: center;
+          border: 1px solid white;
+        }
+
+        /* --- Specific Item Flex Rules --- */
+
+        /* Item 1: No grow, can shrink, basis of 150px */
+        .item-1 {
+          background-color: #007bff; /* Blue */
+          flex: 0 3 150px;
+        }
+
+        /* Item 2: CAN grow, can shrink, basis of 150px */
+        .item-2 {
+          background-color: #28a745; /* Green */
+          flex: 1 1 150px;
+        }
+
+        /* Item 3: No grow, NO shrink, basis of 150px */
+        .item-3 {
+          background-color: #dc3545; /* Red */
+          flex: 0 0 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>This is the header of my website</p>
+    </header>
+    <main>
+        <p>This is the main content of the page</p>
+        <div class="flex-container">
+          <div class="flex-item item-1">Item 1</div>
+          <div class="flex-item item-2">Item 2</div>
+          <div class="flex-item item-3">Item 3</div>
+        </div>
+    </main>
+    <footer>
+        <p>This is the footer of my website</p>
+    </footer>
+</body>
+</html>

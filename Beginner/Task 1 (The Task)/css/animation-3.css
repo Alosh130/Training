@@ -1,0 +1,22 @@
+body 
+{
+    font-family:Verdana, sans-serif;
+    margin:0;
+    background-color:#f8f5f0;
+}
+/*Third Animation*/
+
+.m3
+{
+    font-weight: 800;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    text-align: center;
+}
+
+.m3 .word
+{
+    display: inline-block;
+    line-height: .5em;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/grid-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        header,footer{
+            font-family: 'poppins',sans-serif;
+        }
+        main{
+            font-family: 'PT sans',sans-serif;
+        }
+        body{
+            background: #58b600;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .toggle-button{
+            width: 250px;
+            height: 65px;
+            background: white;
+            border-radius: 50px;
+            overflow: hidden;
+            transition: all 1s ease;
+        }
+        .toggle-button ul li a{
+            display: flex;
+            height: 65px;
+            align-items: center;
+            padding: 0 35px;
+        }
+        .toggle-button ul li a.share-btn{
+            justify-content: center;
+            cursor: pointer;
+        }
+        .toggle-button ul li a.share-btn .text{
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 10px;
+            color: #c73a5d;
+            margin-right: 15px;
+        }
+        .toggle-button ul li a.share-btn .icon{
+            width: 35px;
+            height: 35px;
+            background: #c73a5d;
+            display: inline-block;
+            border-radius: 50%;
+            transition: all 1s ease;
+            position: relative;
+        }
+        .toggle-button ul li a .icon i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+        }
+        .toggle-button ul li a.sm .icon{
+            position: relative;
+            width: 35px;
+            height: 35px;
+            background: red;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .toggle-button ul li a.facebook .icon{
+            background: #3b5998;
+        }
+        .toggle-button ul li a.facebook .text{
+            color: #3b5998;
+        }
+        .toggle-button ul li a.twitter .icon{
+            background: #1da1f2;
+        }
+        .toggle-button ul li a.twitter .text{
+            color: #1da1f2;
+        }
+        .toggle-button ul li a.instagram .icon{
+            background: #c32aa3;
+        }
+        .toggle-button ul li a.instagram .text{
+            color: #c32aa3;
+        }
+        .toggle-button ul li a.whatsapp .icon{
+            background: #0ac142;
+        }
+        .toggle-button ul li a.whatsapp .text{
+            color: #0ac142;
+        }
+        .toggle-button ul li a.linkedin .icon{
+            background: #0073b2;
+        }
+        .toggle-button ul li a.linkedin .text{
+            color: #0073b2;
+        }
+        .toggle-button ul li a.reddit .icon{
+            background: #ff4500;
+        }
+        .toggle-button ul li a.reddit .text{
+            color: #ff4500;
+        }
+        .toggle-button.active{
+            height: 470px;
+        }
+
+        .toggle-button.active ul li a.share-btn .icon{
+            transform: rotate(45deg);
+        }
+
+        .toggle-button ul li a.sm{
+            visibility: hidden;
+        }
+        .toggle-button.active ul li a.sm{
+            visibility: visible;
+            transition-delay: .3s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+                <div class="submenu">
+                    <a href="">Management</a>
+                    <div class="dropdown-2">
+                        <a href="">Developers<i class="fa fa-angle-right"></i></a>
+                        <div class="submenu-2">
+                            <a href="">Frontend Developer</a>
+                            <a href="">Backend Developer</a>
+                        </div>
+                    </div>
+                    <a href="">Designers</a>
+                    <a href="">Support Team</a>
+                </div>
+            <a href="contact.html">Contact us</a>
+            
+            <div class="dropdown">
+                <a class="active" href="#">Task 5</a>
+                <div class="submenu">
+                    <a href="grid-list.html">Grid-view vs List-view</a>
+                    <a href="ourteam.html">Our Team</a>
+                    <a class="active" href="share.html">Share Button</a>
+                    <a href="neumorphism.html">Neumorphism Cards</a>
+                    <a href="product-card.html">Product Card</a>
+                    <a href="todo.html">To Do List</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="toggle-button">
+                <ul>
+                    <li><a href="#" class="share-btn">
+                        <span class="text">SHARE</span>
+                        <span class="icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </a></li>
+
+                    <li><a href="" class="sm facebook">
+                        <span class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </span>
+                        <span class="text">Facebook</span>
+                    </a></li>
+
+                    <li><a href="" class="sm twitter">
+                        <span class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <span class="text">Twitter</span>
+                    </a></li>
+
+                    <li><a href="" class="sm instagram">
+                        <span class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <span class="text">Instagram</span>
+                    </a></li>
+
+                    <li><a href="" class="sm whatsapp">
+                        <span class="icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </span>
+                        <span class="text">Whatsapp</span>
+                    </a></li>
+                    
+                    <li><a href="" class="sm linkedin">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                        <span class="text">Linkedin</span>
+                    </a></li>
+
+                    <li><a href="" class="sm reddit">
+                        <span class="icon">
+                            <i class="fab fa-reddit-alien"></i>
+                        </span>
+                        <span class="text">Reddit</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>WebDev 💻</div>
+        <div>&copy;Ali Mohammad. All rights reserved.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Task</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About us</a>
+                <div class="submenu">
+                    <a href="">Management</a>
+                    <div class="dropdown-2">
+                        <a href="">Developers<i class="fa fa-angle-right"></i></a>
+                        <div class="submenu-2">
+                            <a href="">Frontend Developer</a>
+                            <a href="">Backend Developer</a>
+                        </div>
+                    </div>
+                    <a href="">Designers</a>
+                    <a href="">Support Team</a>
+                </div>
+            <a href="contact.html">Contact us</a>
+            
+            <div class="dropdown">
+                <a href="#">Task 5</a>
+                <div class="submenu">
+                    <a href="grid-list.html">Grid-view vs List-view</a>
+                    <a href="ourteam.html">Our Team</a>
+                    <a href="share.html">Share Button</a>
+                    <a href="neumorphism.html">Neumorphism Cards</a>
+                    <a href="product-card.html">Product Card</a>
+                    <a href="todo.html">To Do List</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="header">
+            <h1>Image Grid</h1>
+            <p>Click on the button to change the grid view</p>
+            <div class="icons">
+                <i onclick="full()" class="fa fa-square"></i>
+                <i onclick="twoColumns()" class="fa fa-th-large"></i>
+                <i onclick="fourColumns()" class="fa fa-th"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div id="column1">
+                <img src="assets/images/img-1.jpg">
+                <img src="assets/images/img-2.jpg">
+                <img src="assets/images/img-3.jpg">
+                <img src="assets/images/img-4.jpg">
+                <img src="assets/images/img-5.jpg">
+                <img src="assets/images/img-6.jpeg">
+                <img src="assets/images/img-7.jpeg">
+                <img src="assets/images/img-8.jpeg">
+                <img src="assets/images/img-9.jpg">
+                <img src="assets/images/img-10.jpg">
+            </div>
+            <div id="column2">
+                <img src="assets/images/img-11.jpg">
+                <img src="assets/images/img-12.jpg">
+                <img src="assets/images/img-13.jpg">
+                <img src="assets/images/img-14.jpg">
+                <img src="assets/images/img-15.jpg">
+                <img src="assets/images/img-16.jpeg">
+                <img src="assets/images/img-17.jpg">
+                <img src="assets/images/img-18.jpg">
+                <img src="assets/images/img-19.jpg">
+                <img src="assets/images/img-20.jpg">
+            </div>
+            <div id="column3">
+                <img src="assets/images/img-21.jpg">
+                <img src="assets/images/img-22.jpg">
+                <img src="assets/images/img-23.jpg">
+                <img src="assets/images/img-24.jpg">
+                <img src="assets/images/img-25.jpeg">
+                <img src="assets/images/img-26.jpg">
+                <img src="assets/images/img-27.jpg">
+                <img src="assets/images/img-28.jpg">
+                <img src="assets/images/img-29.jpg">
+                <img src="assets/images/img-30.png">
+            </div>
+            <div id="column4">
+                <img src="assets/images/img-31.jpg">
+                <img src="assets/images/img-32.jpg">
+                <img src="assets/images/img-33.jpg">
+                <img src="assets/images/img-34.jpg">
+                <img src="assets/images/img-35.jpg">
+                <img src="assets/images/img-36.jpg">
+                <img src="assets/images/img-37.jpg">
+                <img src="assets/images/img-38.jpg">
+                <img src="assets/images/img-39.jpeg">
+                <img src="assets/images/img-40.jpg">
+            </div>
+            
+        </div>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </main>
+    
+    <footer>
+        <div>WebDev 💻</div>
+        <div>&copy;Ali Mohammad. All rights reserved.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

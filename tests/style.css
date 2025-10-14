@@ -1,0 +1,5 @@
+@import "green.css";
+p{
+    color:red;
+    display: inline-block;
+}

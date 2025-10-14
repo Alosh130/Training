@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Combined Project - All Tasks</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <h1>Combined Project</h1>
+            </div>
+            <nav>
+                <a class="act" href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#team">Team</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="offscreen-menu">
+                <a class="act" href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#team">Team</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div id="ham-nav">
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HOME SECTION (from Basic Task 1) -->
+        <section id="home" class="section home-section">
+            <h1>Welcome to the <span>Combined Project</span></h1>
+            <p>This project combines all three Basic Tasks into one comprehensive website showcasing various web development techniques.</p>
+        </section>
+
+        <!-- IMAGE GALLERY SECTION (from Basic Task 2) -->
+        <section id="gallery" class="section gallery-section">
+            <h1>Image Gallery & Media</h1>
+            
+            <!-- HTML Image -->
+            <div class="Image-container">
+                <h2>HTML Image</h2>
+                <img class="img-html" src="assets/images/flower.jpeg" alt="a white flower">
+            </div>
+
+            <!-- CSS Image -->
+            <h2 style="text-align: center;">CSS Background Image</h2>
+            <div class="img-css"></div>
+
+            <!-- Image Grid View -->
+            <div class="header">
+                <h2>Image Grid Gallery</h2>
+                <p>Click to change the grid view.</p>
+                <button id="one-btn" onclick="one()">1</button>
+                <button id="two-btn" onclick="two()">2</button>
+                <button id="four-btn" onclick="four()" class="active-btn">4</button>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <img src="assets/images/wedding.jpg" alt="Wedding">
+                    <img src="assets/images/rocks.jpg" alt="Rocks">
+                    <img src="assets/images/falls2.jpg" alt="Waterfall">
+                    <img src="assets/images/paris.jpg" alt="Paris">
+                    <img src="assets/images/nature.jpg" alt="Nature">
+                    <img src="assets/images/mist.jpg" alt="Mist">
+                    <img src="assets/images/paris.jpg" alt="Paris">
+                </div>
+                <div class="column">
+                    <img src="assets/images/underwater.jpg" alt="Underwater">
+                    <img src="assets/images/ocean.jpg" alt="Ocean">
+                    <img src="assets/images/wedding.jpg" alt="Wedding">
+                    <img src="assets/images/mountainskies.jpg" alt="Mountain Skies">
+                    <img src="assets/images/rocks.jpg" alt="Rocks">
+                    <img src="assets/images/underwater.jpg" alt="Underwater">
+                </div>
+                <div class="column">
+                    <img src="assets/images/wedding.jpg" alt="Wedding">
+                    <img src="assets/images/rocks.jpg" alt="Rocks">
+                    <img src="assets/images/falls2.jpg" alt="Waterfall">
+                    <img src="assets/images/paris.jpg" alt="Paris">
+                    <img src="assets/images/nature.jpg" alt="Nature">
+                    <img src="assets/images/mist.jpg" alt="Mist">
+                    <img src="assets/images/paris.jpg" alt="Paris">
+                </div>
+                <div class="column">
+                    <img src="assets/images/underwater.jpg" alt="Underwater">
+                    <img src="assets/images/ocean.jpg" alt="Ocean">
+                    <img src="assets/images/wedding.jpg" alt="Wedding">
+                    <img src="assets/images/mountainskies.jpg" alt="Mountain Skies">
+                    <img src="assets/images/rocks.jpg" alt="Rocks">
+                    <img src="assets/images/underwater.jpg" alt="Underwater">
+                </div>
+            </div>
+
+            <!-- Image List -->
+            <div class="list-header">
+                <h2>Image List</h2>
+                <ul>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                </ul>
+            </div>
+
+            <!-- Media File -->
+            <div class="media-header">
+                <h2>Media File</h2>
+                <p>PDF file example to view</p>
+                <object data="assets/files/html_tutorial(BOOK).pdf" type="application/pdf">
+                    <p>Your browser doesn't support PDFs. <a target="_blank" href="assets/files/html_tutorial(BOOK).pdf">Download PDF</a>.</p>
+                </object>
+            </div>
+
+            <!-- GIF Image -->
+            <div class="gif-header">
+                <h2>GIF Image</h2>
+                <img src="assets/images/tenor_1.gif" alt="Animated GIF">
+            </div>
+
+            <!-- CSS Animation -->
+            <div class="animated-header">
+                <h2>CSS Animation</h2>
+                <div class="loader">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM SECTION (from Basic Task 3) -->
+        <section id="team" class="section team-section">
+            <h1>Meet Our Team</h1>
+            <div id="meet_team">
+                <div>
+                    <img src="assets/images/team1.jpg" alt="Jane Doe">
+                    <h1>Jane Doe</h1>
+                    <p>CEO & Founder</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+                    <p>example@example.com</p>
+                    <button>Contact</button>
+                </div>
+                <div>
+                    <img src="assets/images/team2.jpg" alt="Mike Ross">
+                    <h1>Mike Ross</h1>
+                    <p>Art Director</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+                    <p>example@example.com</p>
+                    <button>Contact</button>
+                </div>
+                <div>
+                    <img src="assets/images/team3.jpg" alt="John Doe">
+                    <h1>John Doe</h1>
+                    <p>Designer</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+                    <p>example@example.com</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARROWS SECTION (from Basic Task 3) -->
+        <section id="arrows" class="section arrows-section">
+            <h1>Directional Arrows</h1>
+            <div id="Image-container">
+                <div>
+                    <img src="assets/images/right.png" alt="right_arrow">
+                </div>
+                <div>
+                    <img src="assets/images/middle.png" alt="middle_arrow">
+                </div>
+                <div>
+                    <img src="assets/images/left.png" alt="left_arrow">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <h1>About This Project</h1>
+            <p>This combined project demonstrates various web development techniques including:</p>
+            <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
+                <li>Responsive navigation with hamburger menu</li>
+                <li>Interactive image gallery with grid controls</li>
+                <li>CSS animations and transitions</li>
+                <li>Team member cards with hover effects</li>
+                <li>Media embedding (PDF, GIF)</li>
+                <li>Smooth scrolling navigation</li>
+                <li>Scroll-to-top functionality</li>
+                <li>Newsletter subscription form</li>
+            </ul>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <h1>Contact Information</h1>
+            <p>Get in touch with us for any questions or collaboration opportunities.</p>
+            <div style="text-align: center; margin-top: 30px;">
+                <p><strong>Email:</strong> contact@combinedproject.com</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Address:</strong> 123 Web Street, Development City, DC 12345</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- SCROLL TO TOP BUTTON (from Basic Task 3) -->
+    <div class="to_top">
+        <a href="#home">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- FOOTER (from Basic Task 1) -->
+    <footer>
+        <div class="inner">
+            <div class="footer-1 footer-heading">
+                <h2>About us</h2>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+                <a href="">Terms of service</a>
+            </div>
+            <div class="footer-2 footer-heading">
+                <h2>Contact us</h2>
+                <a href="#contact">Contact</a>
+                <a href="">Support</a>
+                <a href="">Jobs</a>
+                <a href="">Sponsorship</a>
+            </div>
+            <div class="footer-3 footer-heading">
+                <h2>Social media</h2>
+                <a href="">Instagram</a>
+                <a href="">Youtube</a>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join Our Newsletter</h2>
+                <input type="email" id="footer-email-input" placeholder="Enter Your Email Address">
+                <input type="submit" value="Sign Up" id="footer-email-btn">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

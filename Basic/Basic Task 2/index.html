@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800">
+    <title>Basic Task 2</title>
+</head>
+
+<body>
+    <!--Html Image-->
+    <div class="Image-container">
+        <h1>HTML Image</h1>
+        <img class="img-html" src="assets/images/flower.jpeg" alt="a white flower">
+    </div>
+
+    <!--CSS Image-->
+    <h1 style="text-align: center;">CSS Image</h1>
+    <div class="img-css"></div>
+    <!--image-grid-view-->
+    <div class="header">
+        <h1>Image Grid</h1>
+        <p>Click to change the grid view.</p>
+        <button id="one-btn" onclick="one()">1</button>
+        <button id="two-btn" onclick="two()">2</button>
+        <button id="four-btn" onclick="four()" class="active-btn">4</button>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="assets/images/wedding.jpg" style="width: 100%;">
+            <img src="assets/images/rocks.jpg" style="width: 100%;">
+            <img src="assets/images/falls2.jpg" style="width: 100%;">
+            <img src="assets/images/paris.jpg" style="width: 100%;">
+            <img src="assets/images/nature.jpg" style="width: 100%;">
+            <img src="assets/images/mist.jpg" style="width: 100%;">
+            <img src="assets/images/paris.jpg" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="assets/images/underwater.jpg" style="width: 100%;">
+            <img src="assets/images/ocean.jpg" style="width: 100%;">
+            <img src="assets/images/wedding.jpg" style="width: 100%;">
+            <img src="assets/images/mountainskies.jpg" style="width: 100%;">
+            <img src="assets/images/rocks.jpg" style="width: 100%;">
+            <img src="assets/images/underwater.jpg" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="assets/images/wedding.jpg" style="width: 100%;">
+            <img src="assets/images/rocks.jpg" style="width: 100%;">
+            <img src="assets/images/falls2.jpg" style="width: 100%;">
+            <img src="assets/images/paris.jpg" style="width: 100%;">
+            <img src="assets/images/nature.jpg" style="width: 100%;">
+            <img src="assets/images/mist.jpg" style="width: 100%;">
+            <img src="assets/images/paris.jpg" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="assets/images/underwater.jpg" style="width: 100%;">
+            <img src="assets/images/ocean.jpg" style="width: 100%;">
+            <img src="assets/images/wedding.jpg" style="width: 100%;">
+            <img src="assets/images/mountainskies.jpg" style="width: 100%;">
+            <img src="assets/images/rocks.jpg" style="width: 100%;">
+            <img src="assets/images/underwater.jpg" style="width: 100%;">
+        </div>
+    </div>
+    <div class="list-header">
+        <h1>Image List</h1>
+        <ul>
+            <li>First Item </li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ul>
+    </div>
+    <div class="media-header">
+        <h1>Media File</h1>
+        <p>PDF file example To Download</p>
+        <object data="/assets/files/html_tutorial(BOOK).pdf" type="application/pdf">
+            <p>Your browser doesn't support PDFs. <a target="_blank" href="/assets/files/html_tutorial(BOOK).pdf">Download PDF</a>.</p>
+        </object>
+    </div>
+    <div class="gif-header">
+        <h1>GIF Image</h1>
+        <img src="assets/images/tenor_1.gif">
+    </div>
+    <div class="animated-header">
+        <h1>CSS Animation</h1>
+        <div class="loader">
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
